@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class RestaurantBilling {
+		int dosa = 1;
+		int idli = 2;
+		int sandwich = 3;
+		int chai = 4;
+		int noodle = 5;
+		int burger = 6;
+		int vadapav = 7;
+		int coffee = 8;
+		int poha = 9;
+		int uttapa = 10;
+		
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		sys
+		
+		
+		
+		
+	}
+
+}

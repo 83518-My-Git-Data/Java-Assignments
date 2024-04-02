@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class RestaurantBilling {
+		
+	public static void main(String[] args) {
+		
+		int dosa = 25;
+		int idli = 30;
+		int noodles = 20;
+		int vadapaav = 30;
+		int juice = 15;
+		int quantity;
+		int totalBill = 0;
+		int choice;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Select food Items and quantity");
+		System.out.println("1. dosa");
+		System.out.println("2. idli");
+		System.out.println("3. noodles");
+		System.out.println("4. vadapaav");
+		System.out.println("5. Juice");
+		System.out.println("6. Total Bill");
+		choice = sc.nextInt();
+		
+		
+		do {
+			
+			
+			switch(choice) {
+				case 1:
+					System.out.print("Enter quantity for dosa:");
+					quantity = sc.nextInt();
+					totalBill += dosa * quantity;
+					break;
+				case 2:
+					System.out.print("Enter quantity for idli:");
+					quantity = sc.nextInt();
+					totalBill += idli * quantity;
+					break;
+				case 3:
+					System.out.print("Enter quantity for noodles:");
+					quantity = sc.nextInt();
+					totalBill += noodles * quantity;
+					break;
+				case 4:
+					System.out.print("Enter quantity for vadapaav:");
+					quantity = sc.nextInt();
+					totalBill += vadapaav * quantity;
+					break;
+				case 5:
+					System.out.print("Enter quantity for Juice:");
+					quantity = sc.nextInt();
+					totalBill += juice * quantity;
+					break;
+				case 6:
+					System.out.print("Total Bill: Rs" + totalBill);
+					break;
+				default:
+					System.out.print("Invalid choice");
+			}
+		} while(choice != 0);
+		
+		sc.close();
+	}
+}
