@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+
+public class CalculateStringLength {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the String");
+		String name = sc.nextLine();
+		
+		try {
+			if(name.length()>80) {
+				throw new ExceptionLineTooLong("String length is too long");
+				
+			}
+			else {
+				System.out.println("Enter string is:"+name);
+				System.out.println("The length of the given string is:"+name.length());
+			}
+		}
+		catch(ExceptionLineTooLong e) {
+			System.out.println("Error: " + e.getMessage());
+		}
+		
+	}
+
+}
+
+
+class ExceptionLineTooLong extends Exception {
+	
+	public ExceptionLineTooLong(String message) {
+		super(message);
+	}
+}
