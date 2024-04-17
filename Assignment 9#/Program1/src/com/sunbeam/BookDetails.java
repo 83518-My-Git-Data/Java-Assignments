@@ -79,7 +79,7 @@ public class BookDetails {
 		            System.out.println(category.ordinal() + ". " + category);
 		        }
 		        int categoryChoice = sc.nextInt();
-		        sc.nextLine(); // Consume newline character
+		        sc.nextLine(); 
 
 		        Category category = Category.values()[categoryChoice];
 
